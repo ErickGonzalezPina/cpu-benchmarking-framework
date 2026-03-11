@@ -83,13 +83,13 @@ source .venv/bin/activate
 Run threaded mode:
 
 ```bash
-.venv/bin/python benchmark.py --mode threaded --duration-seconds 5 --worker-counts 1,2,4,8 --output-file benchmarks/threaded.png
+.venv/bin/python benchmark.py --mode threaded --duration-seconds 2 --worker-counts 1,2,4,8 --output-file benchmarks/threaded.png
 ```
 
 Run process mode:
 
 ```bash
-.venv/bin/python benchmark.py --mode process --duration-seconds 5 --worker-counts 1,2,4,8 --output-file benchmarks/process.png
+.venv/bin/python benchmark.py --mode process --duration-seconds 2 --worker-counts 1,2,4,8 --output-file benchmarks/process.png
 ```
 
 Run threaded vs process comparison:
@@ -127,7 +127,7 @@ Run CLI smoke tests:
 Run full test discovery:
 
 ```bash
-.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python -m unittest discover -s tests -v 
 ```
 
 ## Notes
